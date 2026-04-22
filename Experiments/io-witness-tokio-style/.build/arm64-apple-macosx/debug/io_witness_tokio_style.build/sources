@@ -1,0 +1,12 @@
+/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-tokio-style/Sources/IO.Closer.swift
+/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-tokio-style/Sources/IO.Duplex.swift
+/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-tokio-style/Sources/IO.Error.swift
+/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-tokio-style/Sources/IO.Reader.swift
+/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-tokio-style/Sources/IO.Writer.swift
+/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-tokio-style/Sources/IO.swift
+/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-tokio-style/Sources/Kernel.Descriptor.swift
+/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-tokio-style/Sources/Kernel.swift
+/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-tokio-style/Sources/Memory.Buffer.Mutable.swift
+/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-tokio-style/Sources/Memory.Buffer.swift
+/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-tokio-style/Sources/Memory.swift
+/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-tokio-style/Sources/main.swift

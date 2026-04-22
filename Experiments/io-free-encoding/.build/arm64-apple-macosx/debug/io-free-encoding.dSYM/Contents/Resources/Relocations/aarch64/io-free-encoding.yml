@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io-free-encoding'
+relocations:     []
+...

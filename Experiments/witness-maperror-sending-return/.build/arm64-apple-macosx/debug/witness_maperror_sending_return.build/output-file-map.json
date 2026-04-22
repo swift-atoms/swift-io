@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/witness_maperror_sending_return.build/primary.swiftdeps"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/Sources/main.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/witness_maperror_sending_return.build/main.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/witness_maperror_sending_return.build/main.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/witness_maperror_sending_return.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/witness_maperror_sending_return.build/main.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/witness_maperror_sending_return.build/main.dia"
+  }
+}

@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/coen/Developer/swift-primitives/swift-io-primitives/.build/arm64-apple-macosx/debug/swift-io-primitivesPackageTests.xctest/Contents/MacOS/swift-io-primitivesPackageTests'
+relocations:     []
+...

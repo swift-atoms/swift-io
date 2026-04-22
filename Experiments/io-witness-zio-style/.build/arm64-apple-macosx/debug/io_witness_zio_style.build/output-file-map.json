@@ -1,0 +1,40 @@
+{
+  "": {
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/primary.swiftdeps"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/Sources/IO.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/IO.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/IO.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/IO~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/IO.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/IO.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/Sources/Socket.Environment.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/Socket.Environment.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/Socket.Environment.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/Socket.Environment~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/Socket.Environment.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/Socket.Environment.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/Sources/Socket.Error.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/Socket.Error.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/Socket.Error.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/Socket.Error~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/Socket.Error.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/Socket.Error.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/Sources/Socket.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/Socket.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/Socket.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/Socket~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/Socket.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/Socket.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/Sources/main.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/main.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/main.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/main.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-zio-style/.build/arm64-apple-macosx/debug/io_witness_zio_style.build/main.dia"
+  }
+}

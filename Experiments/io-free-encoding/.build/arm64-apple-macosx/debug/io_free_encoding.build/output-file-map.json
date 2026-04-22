@@ -1,0 +1,138 @@
+{
+  "": {
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/primary.swiftdeps"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/Sources/IO.Error.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Error.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Error.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Error~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Error.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Error.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/Sources/IO.Free+Combinators.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free+Combinators.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free+Combinators.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free+Combinators~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free+Combinators.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free+Combinators.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/Sources/IO.Free+Constructors.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free+Constructors.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free+Constructors.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free+Constructors~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free+Constructors.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free+Constructors.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/Sources/IO.Free+Inspect.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free+Inspect.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free+Inspect.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free+Inspect~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free+Inspect.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free+Inspect.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/Sources/IO.Free+Interpret.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free+Interpret.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free+Interpret.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free+Interpret~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free+Interpret.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free+Interpret.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/Sources/IO.Free.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Free.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/Sources/IO.Handler.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Handler.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Handler.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Handler~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Handler.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Handler.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/Sources/IO.Op.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Op.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Op.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Op~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Op.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.Op.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/Sources/IO.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/IO.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/Sources/Kernel.Descriptor.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Kernel.Descriptor.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Kernel.Descriptor.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Kernel.Descriptor~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Kernel.Descriptor.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Kernel.Descriptor.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/Sources/Kernel.Event.Interest.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Kernel.Event.Interest.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Kernel.Event.Interest.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Kernel.Event.Interest~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Kernel.Event.Interest.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Kernel.Event.Interest.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/Sources/Kernel.Event.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Kernel.Event.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Kernel.Event.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Kernel.Event~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Kernel.Event.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Kernel.Event.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/Sources/Kernel.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Kernel.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Kernel.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Kernel~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Kernel.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Kernel.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/Sources/Memory.Buffer.Mutable.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Memory.Buffer.Mutable.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Memory.Buffer.Mutable.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Memory.Buffer.Mutable~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Memory.Buffer.Mutable.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Memory.Buffer.Mutable.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/Sources/Memory.Buffer.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Memory.Buffer.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Memory.Buffer.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Memory.Buffer~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Memory.Buffer.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Memory.Buffer.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/Sources/Memory.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Memory.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Memory.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Memory~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Memory.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Memory.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/Sources/Socket.Error.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Socket.Error.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Socket.Error.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Socket.Error~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Socket.Error.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Socket.Error.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/Sources/Socket.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Socket.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Socket.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Socket~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Socket.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/Socket.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/Sources/main.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/main.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/main.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/main.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-free-encoding/.build/arm64-apple-macosx/debug/io_free_encoding.build/main.dia"
+  }
+}

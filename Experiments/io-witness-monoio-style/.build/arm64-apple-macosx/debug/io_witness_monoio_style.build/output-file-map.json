@@ -1,0 +1,54 @@
+{
+  "": {
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/primary.swiftdeps"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/IO.Error.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/IO.Error.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/IO.Error.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/IO.Error~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/IO.Error.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/IO.Error.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/IO.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/IO.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/IO.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/IO~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/IO.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/IO.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/Kernel.Descriptor.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Kernel.Descriptor.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Kernel.Descriptor.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Kernel.Descriptor~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Kernel.Descriptor.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Kernel.Descriptor.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/Kernel.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Kernel.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Kernel.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Kernel~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Kernel.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Kernel.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/Memory.Buffer.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Memory.Buffer.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Memory.Buffer.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Memory.Buffer~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Memory.Buffer.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Memory.Buffer.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/Memory.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Memory.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Memory.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Memory~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Memory.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Memory.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/main.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/main.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/main.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/main.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/main.dia"
+  }
+}

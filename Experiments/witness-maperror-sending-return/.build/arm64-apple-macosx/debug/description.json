@@ -1,0 +1,275 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.witness-maperror-sending-return-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/witness_maperror_sending_return.build/sources",
+      "importPath" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/Sources/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/witness_maperror_sending_return.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "witness_maperror_sending_return",
+      "moduleOutputPath" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/Modules/witness_maperror_sending_return.swiftmodule",
+      "objects" : [
+        "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/witness_maperror_sending_return.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx26.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "witness_maperror_sending_return_main",
+        "-swift-version",
+        "6",
+        "-enable-upcoming-feature",
+        "ExistentialAny",
+        "-enable-upcoming-feature",
+        "InternalImportsByDefault",
+        "-enable-upcoming-feature",
+        "MemberImportVisibility",
+        "-enable-upcoming-feature",
+        "NonisolatedNonsendingByDefault",
+        "-enable-experimental-feature",
+        "LifetimeDependence",
+        "-enable-experimental-feature",
+        "Lifetimes",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "witness_maperror_sending_return"
+      ],
+      "outputFileMapPath" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/witness_maperror_sending_return.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/witness_maperror_sending_return.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/Modules/witness_maperror_sending_return.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/Sources/main.swift"
+      ],
+      "tempsPath" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/witness_maperror_sending_return.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "witness_maperror_sending_return" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "witness_maperror_sending_return",
+      "-package-name",
+      "witness_maperror_sending_return",
+      "-c",
+      "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/Sources/main.swift",
+      "-I",
+      "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx26.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "witness_maperror_sending_return_main",
+      "-swift-version",
+      "6",
+      "-enable-upcoming-feature",
+      "ExistentialAny",
+      "-enable-upcoming-feature",
+      "InternalImportsByDefault",
+      "-enable-upcoming-feature",
+      "MemberImportVisibility",
+      "-enable-upcoming-feature",
+      "NonisolatedNonsendingByDefault",
+      "-enable-experimental-feature",
+      "LifetimeDependence",
+      "-enable-experimental-feature",
+      "Lifetimes",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "witness_maperror_sending_return",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "witness_maperror_sending_return" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    },
+    "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/witness-maperror-sending-return-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/witness-maperror-sending-return-entitlement.plist"
+    },
+    "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/witness-maperror-sending-return.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/witness_maperror_sending_return.build/main.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/witness-maperror-sending-return.product/Objects.LinkFileList"
+    },
+    "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/witness_maperror_sending_return.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/Sources/main.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/witness_maperror_sending_return.build/sources"
+    }
+  }
+}

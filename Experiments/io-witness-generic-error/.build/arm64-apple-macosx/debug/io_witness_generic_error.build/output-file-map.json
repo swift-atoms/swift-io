@@ -1,0 +1,89 @@
+{
+  "": {
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/primary.swiftdeps"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/Sources/File.Error.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/File.Error.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/File.Error.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/File.Error~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/File.Error.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/File.Error.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/Sources/File.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/File.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/File.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/File~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/File.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/File.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/Sources/IO.Error.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/IO.Error.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/IO.Error.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/IO.Error~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/IO.Error.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/IO.Error.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/Sources/IO.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/IO.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/IO.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/IO~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/IO.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/IO.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/Sources/Kernel.Descriptor.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Kernel.Descriptor.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Kernel.Descriptor.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Kernel.Descriptor~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Kernel.Descriptor.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Kernel.Descriptor.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/Sources/Kernel.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Kernel.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Kernel.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Kernel~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Kernel.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Kernel.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/Sources/Memory.Buffer.Mutable.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Memory.Buffer.Mutable.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Memory.Buffer.Mutable.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Memory.Buffer.Mutable~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Memory.Buffer.Mutable.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Memory.Buffer.Mutable.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/Sources/Memory.Buffer.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Memory.Buffer.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Memory.Buffer.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Memory.Buffer~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Memory.Buffer.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Memory.Buffer.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/Sources/Memory.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Memory.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Memory.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Memory~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Memory.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Memory.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/Sources/Socket.Error.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Socket.Error.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Socket.Error.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Socket.Error~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Socket.Error.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Socket.Error.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/Sources/Socket.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Socket.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Socket.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Socket~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Socket.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/Socket.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/Sources/main.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/main.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/main.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/main.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-generic-error/.build/arm64-apple-macosx/debug/io_witness_generic_error.build/main.dia"
+  }
+}

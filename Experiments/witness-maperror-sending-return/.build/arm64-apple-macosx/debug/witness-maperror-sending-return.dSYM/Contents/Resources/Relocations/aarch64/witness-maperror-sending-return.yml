@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-maperror-sending-return/.build/arm64-apple-macosx/debug/witness-maperror-sending-return'
+relocations:     []
+...

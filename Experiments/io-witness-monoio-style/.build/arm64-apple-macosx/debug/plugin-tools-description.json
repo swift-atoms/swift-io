@@ -1,0 +1,389 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.io-witness-monoio-style-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/sources",
+      "importPath" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/IO.Error.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/IO.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/Kernel.Descriptor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/Kernel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/Memory.Buffer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/Memory.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "io_witness_monoio_style",
+      "moduleOutputPath" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/Modules/io_witness_monoio_style.swiftmodule",
+      "objects" : [
+        "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/IO.Error.swift.o",
+        "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/IO.swift.o",
+        "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Kernel.Descriptor.swift.o",
+        "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Kernel.swift.o",
+        "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Memory.Buffer.swift.o",
+        "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Memory.swift.o",
+        "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx26.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "io_witness_monoio_style_main",
+        "-swift-version",
+        "6",
+        "-enable-upcoming-feature",
+        "ExistentialAny",
+        "-enable-upcoming-feature",
+        "InternalImportsByDefault",
+        "-enable-upcoming-feature",
+        "MemberImportVisibility",
+        "-enable-upcoming-feature",
+        "NonisolatedNonsendingByDefault",
+        "-enable-experimental-feature",
+        "LifetimeDependence",
+        "-enable-experimental-feature",
+        "Lifetimes",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "io_witness_monoio_style"
+      ],
+      "outputFileMapPath" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/IO.Error.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/IO.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Kernel.Descriptor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Kernel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Memory.Buffer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Memory.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/Modules/io_witness_monoio_style.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/IO.Error.swift",
+        "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/IO.swift",
+        "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/Kernel.Descriptor.swift",
+        "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/Kernel.swift",
+        "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/Memory.Buffer.swift",
+        "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/Memory.swift",
+        "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/main.swift"
+      ],
+      "tempsPath" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "io_witness_monoio_style" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "io_witness_monoio_style",
+      "-package-name",
+      "io_witness_monoio_style",
+      "-c",
+      "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/IO.Error.swift",
+      "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/IO.swift",
+      "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/Kernel.Descriptor.swift",
+      "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/Kernel.swift",
+      "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/Memory.Buffer.swift",
+      "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/Memory.swift",
+      "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/main.swift",
+      "-I",
+      "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx26.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "io_witness_monoio_style_main",
+      "-swift-version",
+      "6",
+      "-enable-upcoming-feature",
+      "ExistentialAny",
+      "-enable-upcoming-feature",
+      "InternalImportsByDefault",
+      "-enable-upcoming-feature",
+      "MemberImportVisibility",
+      "-enable-upcoming-feature",
+      "NonisolatedNonsendingByDefault",
+      "-enable-experimental-feature",
+      "LifetimeDependence",
+      "-enable-experimental-feature",
+      "Lifetimes",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "io_witness_monoio_style",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "io_witness_monoio_style" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io-witness-monoio-style-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io-witness-monoio-style-entitlement.plist"
+    },
+    "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io-witness-monoio-style.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/IO.Error.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/IO.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Kernel.Descriptor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Kernel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Memory.Buffer.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/Memory.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/main.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io-witness-monoio-style.product/Objects.LinkFileList"
+    },
+    "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/IO.Error.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/IO.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/Kernel.Descriptor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/Kernel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/Memory.Buffer.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/Memory.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/Sources/main.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/io_witness_monoio_style.build/sources"
+    },
+    "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-witness-monoio-style/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

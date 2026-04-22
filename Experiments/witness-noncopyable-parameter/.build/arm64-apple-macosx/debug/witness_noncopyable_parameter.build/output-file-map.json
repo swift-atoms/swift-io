@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-noncopyable-parameter/.build/arm64-apple-macosx/debug/witness_noncopyable_parameter.build/primary.swiftdeps"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-noncopyable-parameter/Sources/main.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-noncopyable-parameter/.build/arm64-apple-macosx/debug/witness_noncopyable_parameter.build/main.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-noncopyable-parameter/.build/arm64-apple-macosx/debug/witness_noncopyable_parameter.build/main.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-noncopyable-parameter/.build/arm64-apple-macosx/debug/witness_noncopyable_parameter.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-noncopyable-parameter/.build/arm64-apple-macosx/debug/witness_noncopyable_parameter.build/main.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/witness-noncopyable-parameter/.build/arm64-apple-macosx/debug/witness_noncopyable_parameter.build/main.dia"
+  }
+}

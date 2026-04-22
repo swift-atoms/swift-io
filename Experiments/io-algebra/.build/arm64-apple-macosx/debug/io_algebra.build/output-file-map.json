@@ -1,0 +1,61 @@
+{
+  "": {
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/primary.swiftdeps"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/Sources/IO+Applicative.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Applicative.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Applicative.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Applicative~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Applicative.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Applicative.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/Sources/IO+Factories.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Factories.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Factories.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Factories~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Factories.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Factories.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/Sources/IO+Monad.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Monad.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Monad.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Monad~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Monad.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Monad.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/Sources/IO+Reader.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Reader.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Reader.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Reader~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Reader.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Reader.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/Sources/IO+Traversal.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Traversal.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Traversal.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Traversal~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Traversal.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO+Traversal.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/Sources/IO.Error.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO.Error.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO.Error.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO.Error~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO.Error.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO.Error.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/Sources/IO.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/IO.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/Sources/main.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/main.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/main.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/main.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/Experiments/io-algebra/.build/arm64-apple-macosx/debug/io_algebra.build/main.dia"
+  }
+}

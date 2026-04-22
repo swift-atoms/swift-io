@@ -1,0 +1,142 @@
+// ===----------------------------------------------------------------------===//
+//
+// Demonstration: how `IO<Capabilities>` at L1 is consumed by `swift-sockets`.
+//
+// Socket capabilities differ from basic fd ops: `connect`, `accept`, `send`,
+// `recv`, `shutdown` are the canonical socket-layer operations. Many map
+// natively to io_uring ops (`IORING_OP_ACCEPT`, `IORING_OP_CONNECT`,
+// `IORING_OP_SEND`, `IORING_OP_RECV`) — which is the architectural win
+// over a 4-op substrate that would force `io.ready + raw_accept`.
+//
+// ===----------------------------------------------------------------------===//
+
+import IO_Primitives_Test_Support
+import Testing
+
+// ============================================================================
+// MARK: - Domain types (would live in swift-sockets at L3)
+// ============================================================================
+
+private enum Socket {}
+
+extension Socket {
+    struct Descriptor: Sendable, Equatable {
+        let raw: Int32
+    }
+
+    struct Address: Sendable, Equatable {
+        let host: String
+        let port: UInt16
+    }
+
+    enum Error: Swift.Error, Sendable, Equatable {
+        case refused
+        case reset
+        case timeout
+    }
+}
+
+extension Socket {
+    struct Capabilities: Sendable {
+        let connect:  @Sendable (borrowing Socket.Descriptor, Socket.Address) async throws(Socket.Error) -> Void
+        let accept:   @Sendable (borrowing Socket.Descriptor) async throws(Socket.Error) -> Socket.Descriptor
+        let send:     @Sendable (borrowing Socket.Descriptor, Int) async throws(Socket.Error) -> Int
+        let recv:     @Sendable (borrowing Socket.Descriptor, Int) async throws(Socket.Error) -> Int
+        let shutdown: @Sendable (borrowing Socket.Descriptor) async throws(Socket.Error) -> Void
+        let close:    @Sendable (consuming Socket.Descriptor) async -> Void
+    }
+}
+
+// ============================================================================
+// MARK: - Suite
+// ============================================================================
+
+extension Socket {
+
+    @Suite("Socket Usage (swift-sockets)")
+    struct Test {
+        @Suite struct Unit {}
+        @Suite struct `Edge Case` {}
+        @Suite struct Integration {}
+        @Suite(.serialized) struct Performance {}
+    }
+}
+
+// ============================================================================
+// MARK: - Fixtures
+// ============================================================================
+
+private actor Recorder {
+    var calls: [String] = []
+    func log(_ entry: String) { calls.append(entry) }
+    func snapshot() -> [String] { calls }
+}
+
+private func fake(recorder: Recorder) -> IO<Socket.Capabilities> {
+    let caps = Socket.Capabilities(
+        connect: { fd, addr throws(Socket.Error) in
+            await recorder.log("connect(fd: \(fd.raw), \(addr.host):\(addr.port))")
+        },
+        accept: { fd throws(Socket.Error) in
+            await recorder.log("accept(fd: \(fd.raw))")
+            return Socket.Descriptor(raw: fd.raw &+ 1)
+        },
+        send: { fd, n throws(Socket.Error) in
+            await recorder.log("send(fd: \(fd.raw), n: \(n))")
+            return n
+        },
+        recv: { fd, n throws(Socket.Error) in
+            await recorder.log("recv(fd: \(fd.raw), n: \(n))")
+            return n
+        },
+        shutdown: { fd throws(Socket.Error) in
+            await recorder.log("shutdown(fd: \(fd.raw))")
+        },
+        close: { fd in
+            await recorder.log("close(fd: \(fd.raw))")
+        }
+    )
+    return IO(capabilities: caps)
+}
+
+// ============================================================================
+// MARK: - Integration
+// ============================================================================
+
+extension Socket.Test.Integration {
+
+    @Test
+    func `client-style socket sequence: connect, send, recv, close`() async throws {
+        let recorder = Recorder()
+        let io = fake(recorder: recorder)
+
+        let sock = Socket.Descriptor(raw: 5)
+        try await io.capabilities.connect(sock, Socket.Address(host: "example.com", port: 443))
+        _ = try await io.capabilities.send(sock, 128)
+        _ = try await io.capabilities.recv(sock, 4096)
+        await io.capabilities.close(sock)
+
+        let calls = await recorder.snapshot()
+        #expect(calls == [
+            "connect(fd: 5, example.com:443)",
+            "send(fd: 5, n: 128)",
+            "recv(fd: 5, n: 4096)",
+            "close(fd: 5)",
+        ])
+    }
+
+    @Test
+    func `accept returns a fresh descriptor — no ready+raw_accept pattern`() async throws {
+        let recorder = Recorder()
+        let io = fake(recorder: recorder)
+
+        let listener = Socket.Descriptor(raw: 3)
+        let accepted = try await io.capabilities.accept(listener)
+        #expect(accepted == Socket.Descriptor(raw: 4))
+
+        let calls = await recorder.snapshot()
+        // One call. No "ready" preamble — accept is a first-class capability
+        // operation, which on io_uring maps to IORING_OP_ACCEPT directly.
+        #expect(calls == ["accept(fd: 3)"])
+    }
+}

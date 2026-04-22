@@ -1,0 +1,26 @@
+{
+  "": {
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/.build/arm64-apple-macosx/debug/IO_Primitives.build/primary.swiftdeps"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Sources/IO Primitives/IO.Runner.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/.build/arm64-apple-macosx/debug/IO_Primitives.build/IO.Runner.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/.build/arm64-apple-macosx/debug/IO_Primitives.build/IO.Runner.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/.build/arm64-apple-macosx/debug/IO_Primitives.build/IO.Runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/.build/arm64-apple-macosx/debug/IO_Primitives.build/IO.Runner.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/.build/arm64-apple-macosx/debug/IO_Primitives.build/IO.Runner.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Sources/IO Primitives/IO.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/.build/arm64-apple-macosx/debug/IO_Primitives.build/IO.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/.build/arm64-apple-macosx/debug/IO_Primitives.build/IO.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/.build/arm64-apple-macosx/debug/IO_Primitives.build/IO~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/.build/arm64-apple-macosx/debug/IO_Primitives.build/IO.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/.build/arm64-apple-macosx/debug/IO_Primitives.build/IO.dia"
+  },
+  "/Users/coen/Developer/swift-primitives/swift-io-primitives/Sources/IO Primitives/exports.swift": {
+    "dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/.build/arm64-apple-macosx/debug/IO_Primitives.build/exports.d",
+    "object": "/Users/coen/Developer/swift-primitives/swift-io-primitives/.build/arm64-apple-macosx/debug/IO_Primitives.build/exports.swift.o",
+    "swiftmodule": "/Users/coen/Developer/swift-primitives/swift-io-primitives/.build/arm64-apple-macosx/debug/IO_Primitives.build/exports~partial.swiftmodule",
+    "swift-dependencies": "/Users/coen/Developer/swift-primitives/swift-io-primitives/.build/arm64-apple-macosx/debug/IO_Primitives.build/exports.swiftdeps",
+    "diagnostics": "/Users/coen/Developer/swift-primitives/swift-io-primitives/.build/arm64-apple-macosx/debug/IO_Primitives.build/exports.dia"
+  }
+}
