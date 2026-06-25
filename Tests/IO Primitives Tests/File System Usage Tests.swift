@@ -32,7 +32,7 @@ extension File {
 
     struct Flags: Sendable, Equatable {
         let raw: Int32
-        static let readOnly  = File.Flags(raw: 0)
+        static let readOnly = File.Flags(raw: 0)
         static let readWrite = File.Flags(raw: 2)
     }
 
@@ -48,11 +48,11 @@ extension File {
 
 extension File {
     struct Capabilities: Sendable {
-        let open:   @Sendable (File.Path, File.Flags) async throws(File.Error) -> File.Descriptor
-        let close:  @Sendable (consuming File.Descriptor) async -> Void
-        let read:   @Sendable (borrowing File.Descriptor, Int) async throws(File.Error) -> Int
-        let write:  @Sendable (borrowing File.Descriptor, Int) async throws(File.Error) -> Int
-        let stat:   @Sendable (File.Path) async throws(File.Error) -> File.Info
+        let open: @Sendable (File.Path, File.Flags) async throws(File.Error) -> File.Descriptor
+        let close: @Sendable (consuming File.Descriptor) async -> Void
+        let read: @Sendable (borrowing File.Descriptor, Int) async throws(File.Error) -> Int
+        let write: @Sendable (borrowing File.Descriptor, Int) async throws(File.Error) -> Int
+        let stat: @Sendable (File.Path) async throws(File.Error) -> File.Info
         let unlink: @Sendable (File.Path) async throws(File.Error) -> Void
         let rename: @Sendable (File.Path, File.Path) async throws(File.Error) -> Void
     }
@@ -132,11 +132,13 @@ extension File.Test.Integration {
         await io.capabilities.close(fd)
 
         let calls = await recorder.snapshot()
-        #expect(calls == [
-            "open(/tmp/data.txt, flags: 0)",
-            "read(fd: 42, n: 4096)",
-            "close(fd: 42)",
-        ])
+        #expect(
+            calls == [
+                "open(/tmp/data.txt, flags: 0)",
+                "read(fd: 42, n: 4096)",
+                "close(fd: 42)",
+            ]
+        )
     }
 
     @Test
@@ -151,10 +153,12 @@ extension File.Test.Integration {
         try await io.capabilities.unlink(File.Path(raw: "/tmp/new.txt"))
 
         let calls = await recorder.snapshot()
-        #expect(calls == [
-            "stat(/tmp/old.txt)",
-            "rename(/tmp/old.txt -> /tmp/new.txt)",
-            "unlink(/tmp/new.txt)",
-        ])
+        #expect(
+            calls == [
+                "stat(/tmp/old.txt)",
+                "rename(/tmp/old.txt -> /tmp/new.txt)",
+                "unlink(/tmp/new.txt)",
+            ]
+        )
     }
 }

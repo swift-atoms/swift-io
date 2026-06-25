@@ -41,10 +41,10 @@ extension Server {
 
 extension Server {
     struct Capabilities: Sendable {
-        let bind:   @Sendable (Server.Address) async throws(Server.Error) -> Server.Listener
+        let bind: @Sendable (Server.Address) async throws(Server.Error) -> Server.Listener
         let listen: @Sendable (borrowing Server.Listener, Int) async throws(Server.Error) -> Void
         let accept: @Sendable (borrowing Server.Listener) async throws(Server.Error) -> Server.Connection
-        let close:  @Sendable (consuming Server.Listener) async -> Void
+        let close: @Sendable (consuming Server.Listener) async -> Void
     }
 }
 
@@ -115,12 +115,14 @@ extension Server.Test.Integration {
         await io.capabilities.close(listener)
 
         let calls = await recorder.snapshot()
-        #expect(calls == [
-            "bind(0.0.0.0:8080)",
-            "listen(listener: 7, backlog: 128)",
-            "accept(listener: 7)",
-            "close(listener: 7)",
-        ])
+        #expect(
+            calls == [
+                "bind(0.0.0.0:8080)",
+                "listen(listener: 7, backlog: 128)",
+                "accept(listener: 7)",
+                "close(listener: 7)",
+            ]
+        )
     }
 
     @Test
@@ -130,10 +132,10 @@ extension Server.Test.Integration {
         // Here we only verify the io.runner access compiles. Actually invoking
         // .unimplemented's executor() traps — that's its contract.
         let caps = Server.Capabilities(
-            bind:   { _ throws(Server.Error) in Server.Listener(raw: 1) },
+            bind: { _ throws(Server.Error) in Server.Listener(raw: 1) },
             listen: { _, _ throws(Server.Error) in },
             accept: { _ throws(Server.Error) in Server.Connection(raw: 2, peer: Server.Address(host: "", port: 0)) },
-            close:  { _ in }
+            close: { _ in }
         )
         let io = IO(capabilities: caps)
         _ = io.runner

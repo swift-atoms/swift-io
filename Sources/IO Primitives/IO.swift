@@ -43,8 +43,8 @@
 ///     public struct Capabilities: Sendable {
 ///         public let open:   @Sendable (File.Path, File.Flags) async throws(IO.Error) -> Kernel.Descriptor
 ///         public let close:  @Sendable (consuming Kernel.Descriptor) async -> Void
-///         public let read:   @Sendable (borrowing Kernel.Descriptor, Memory.Buffer.Mutable) async throws(IO.Error) -> Int
-///         public let write:  @Sendable (borrowing Kernel.Descriptor, Memory.Buffer) async throws(IO.Error) -> Int
+///         public let read:   @Sendable (borrowing Kernel.Descriptor, Span.Raw.Mutable) async throws(IO.Error) -> Int
+///         public let write:  @Sendable (borrowing Kernel.Descriptor, Span.Raw) async throws(IO.Error) -> Int
 ///         public let stat:   @Sendable (File.Path) async throws(IO.Error) -> File.Stat
 ///         // ...
 ///     }
@@ -92,14 +92,16 @@
 /// rationale and the experiments that validated each choice.
 public struct IO<Capabilities: Sendable>: Sendable {
 
-    /// The domain-specific operation set. A value of some domain-defined
-    /// struct (for example `File.Capabilities`, `Socket.Capabilities`,
-    /// or the basic fd-byte-ops witness).
+    /// The domain-specific operation set.
+    ///
+    /// A value of some domain-defined struct (for example `File.Capabilities`,
+    /// `Socket.Capabilities`, or the basic fd-byte-ops witness).
     public let capabilities: Capabilities
 
-    /// The scheduling evidence — the underlying executor plus a shutdown
-    /// hook. Produced by a strategy (blocking / events / completions)
-    /// at construction time.
+    /// The scheduling evidence — the underlying executor plus a shutdown hook.
+    ///
+    /// Produced by a strategy (blocking / events / completions) at
+    /// construction time.
     public let runner: Runner
 
     /// Creates an IO bundle from a capability set and a runner.

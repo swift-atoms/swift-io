@@ -25,6 +25,7 @@
 // Methodology: Incremental construction per [EXP-004a]
 //
 // Toolchain: Apple Swift 6.3 (swiftlang-6.3.0.123.5)
+// Revalidated: Swift 6.3.1 (2026-04-30) — PASSES
 // Platform: macOS 26.2 (arm64)
 //
 // Results:

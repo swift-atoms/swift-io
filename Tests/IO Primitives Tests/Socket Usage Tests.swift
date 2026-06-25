@@ -38,12 +38,12 @@ extension Socket {
 
 extension Socket {
     struct Capabilities: Sendable {
-        let connect:  @Sendable (borrowing Socket.Descriptor, Socket.Address) async throws(Socket.Error) -> Void
-        let accept:   @Sendable (borrowing Socket.Descriptor) async throws(Socket.Error) -> Socket.Descriptor
-        let send:     @Sendable (borrowing Socket.Descriptor, Int) async throws(Socket.Error) -> Int
-        let recv:     @Sendable (borrowing Socket.Descriptor, Int) async throws(Socket.Error) -> Int
+        let connect: @Sendable (borrowing Socket.Descriptor, Socket.Address) async throws(Socket.Error) -> Void
+        let accept: @Sendable (borrowing Socket.Descriptor) async throws(Socket.Error) -> Socket.Descriptor
+        let send: @Sendable (borrowing Socket.Descriptor, Int) async throws(Socket.Error) -> Int
+        let recv: @Sendable (borrowing Socket.Descriptor, Int) async throws(Socket.Error) -> Int
         let shutdown: @Sendable (borrowing Socket.Descriptor) async throws(Socket.Error) -> Void
-        let close:    @Sendable (consuming Socket.Descriptor) async -> Void
+        let close: @Sendable (consuming Socket.Descriptor) async -> Void
     }
 }
 
@@ -117,12 +117,14 @@ extension Socket.Test.Integration {
         await io.capabilities.close(sock)
 
         let calls = await recorder.snapshot()
-        #expect(calls == [
-            "connect(fd: 5, example.com:443)",
-            "send(fd: 5, n: 128)",
-            "recv(fd: 5, n: 4096)",
-            "close(fd: 5)",
-        ])
+        #expect(
+            calls == [
+                "connect(fd: 5, example.com:443)",
+                "send(fd: 5, n: 128)",
+                "recv(fd: 5, n: 4096)",
+                "close(fd: 5)",
+            ]
+        )
     }
 
     @Test

@@ -31,6 +31,7 @@
 // transformation across mapError / map / etc.
 //
 // Toolchain: Swift 6.3.1 release
+// Revalidated: Swift 6.3.1 (2026-04-30) — PASSES
 // Platform:  macOS 26 (arm64)
 // Date:      2026-04-16 (renamed for code-surface compliance 2026-04-20)
 // ============================================================================

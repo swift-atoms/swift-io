@@ -9,6 +9,7 @@
 // Toolchain: Swift 6.3 release
 // Platform: macOS 26 (arm64)
 // Result: PENDING
+// Revalidated: Swift 6.3.1 (2026-04-30) — PASSES
 // Date: 2026-04-17
 //
 

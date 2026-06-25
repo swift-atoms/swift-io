@@ -22,15 +22,11 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(path: "../swift-witness-primitives"),
-        .package(path: "../swift-standard-library-extensions"),
     ],
     targets: [
         .target(
             name: "IO Primitives",
             dependencies: [
-                .product(name: "Witness Primitives", package: "swift-witness-primitives"),
-                .product(name: "Standard Library Extensions", package: "swift-standard-library-extensions"),
             ]
         ),
         .target(
