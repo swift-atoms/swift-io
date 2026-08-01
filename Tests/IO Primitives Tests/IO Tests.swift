@@ -43,7 +43,7 @@ private struct TaggedCapabilities<Tag>: Sendable {
     let marker: Int
 }
 
-private enum ClientTag {}
+private enum Client {}
 
 // ============================================================================
 // MARK: - Unit
@@ -83,8 +83,8 @@ extension Test.`Edge Case` {
 
     @Test
     func `IO is generic over arbitrary Sendable capability types`() {
-        let io = IO<TaggedCapabilities<ClientTag>>(
-            capabilities: TaggedCapabilities<ClientTag>(marker: 99),
+        let io = IO<TaggedCapabilities<Client>>(
+            capabilities: TaggedCapabilities<Client>(marker: 99),
             runner: .unimplemented
         )
         #expect(io.capabilities.marker == 99)

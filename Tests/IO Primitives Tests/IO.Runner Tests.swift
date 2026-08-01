@@ -31,10 +31,16 @@ private struct Test {
 
 private actor Counter {
     var value: Int = 0
+}
+
+extension Counter {
     func increment() { value += 1 }
 }
 
 private final class SimpleExecutor: SerialExecutor, @unchecked Sendable {
+}
+
+extension SimpleExecutor {
     static let shared = SimpleExecutor()
     func enqueue(_ job: consuming ExecutorJob) {}
     func asUnownedSerialExecutor() -> UnownedSerialExecutor {
@@ -61,7 +67,7 @@ extension Test.Unit {
             }
         )
 
-        _ = unsafe runner.executor()
+        unsafe (_ = runner.executor())
         await runner.shutdown()
         await #expect(counter.value == 1)
     }

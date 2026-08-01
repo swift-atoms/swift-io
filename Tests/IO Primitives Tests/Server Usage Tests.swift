@@ -69,6 +69,9 @@ extension Server {
 
 private actor Recorder {
     var calls: [String] = []
+}
+
+extension Recorder {
     func log(_ entry: String) { calls.append(entry) }
     func snapshot() -> [String] { calls }
 }

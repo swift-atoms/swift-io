@@ -32,8 +32,6 @@ extension File {
 
     struct Flags: Sendable, Equatable {
         let raw: Int32
-        static let readOnly = File.Flags(raw: 0)
-        static let readWrite = File.Flags(raw: 2)
     }
 
     struct Info: Sendable, Equatable {
@@ -44,6 +42,11 @@ extension File {
         case notFound
         case permissionDenied
     }
+}
+
+extension File.Flags {
+    fileprivate static let readOnly = File.Flags(raw: 0)
+    fileprivate static let readWrite = File.Flags(raw: 2)
 }
 
 extension File {
@@ -79,6 +82,9 @@ extension File {
 
 private actor Recorder {
     var calls: [String] = []
+}
+
+extension Recorder {
     func log(_ entry: String) { calls.append(entry) }
     func snapshot() -> [String] { calls }
 }

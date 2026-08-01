@@ -57,7 +57,7 @@
         /// inside per-(domain × strategy) factories where the domain's
         /// ``Capabilities`` type is already named.
         ///
-        /// ## Safety
+        /// ## Safety Invariant
         ///
         /// Safe by construction — the backing storage uses only standard-library
         /// safe types; `@safe` documents that this type performs no unsafe
