@@ -37,6 +37,13 @@
         /// - **Physical completion:** Cancellation alone is insufficient
         ///   evidence for release. Only consuming Completion.wait() provides
         ///   the result-free acknowledgement.
+        ///
+        /// ## Safety Invariant
+        ///
+        /// The operation privately owns its safe result closure. Its
+        /// `~Copyable` and consuming interface prevent concurrent or repeated
+        /// access to that closure, and dropping a live operation invokes only
+        /// the safe cancellation endpoint.
         @safe
         public struct Operation<Output: ~Copyable, Failure: Swift.Error>: ~Copyable {
 

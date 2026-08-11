@@ -24,6 +24,12 @@
         /// The acknowledgement is linear: consume it with wait() exactly once.
         /// Dropping it without waiting is a programmer error because doing so
         /// would permit resource release without proof of physical completion.
+        ///
+        /// ## Safety Invariant
+        ///
+        /// The acknowledgement privately owns a safe async closure. Its
+        /// `~Copyable` and consuming interface prevent concurrent or repeated
+        /// access to that closure, and no unsafe operation is performed.
         @safe
         public struct Completion: ~Copyable {
 

@@ -23,6 +23,12 @@
         /// This endpoint is copyable because an operation owner and a release
         /// path may both need to request cancellation. Its action is the only
         /// concurrently reusable closure in the operation lifecycle algebra.
+        ///
+        /// ## Safety Invariant
+        ///
+        /// The endpoint stores only a `@Sendable` closure and invokes it without
+        /// any unsafe operation. The supplier's idempotence requirement governs
+        /// lifecycle behavior, not memory safety.
         @safe
         public struct Cancellation: Sendable {
 
