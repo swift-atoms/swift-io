@@ -43,3 +43,20 @@ The lifecycle types contain no result-sharing storage. Strategy implementations
 provide the three closures and remain responsible for making cancellation
 idempotent and making the completion closure return only after physical work
 has ended.
+
+## Starting through a strategy
+
+A Startable strategy creates the operation and completion owners. Its start
+requirement is generic over the IO capability set, output, and caller failure,
+so one strategy conformer can serve multiple domains without type erasure or a
+stored higher-rank closure.
+
+Start borrows the caller's resource only while owners are constructed. The
+returned owners escape that call, so neither may retain or capture the borrowed
+resource. A strategy establishes any separately owned execution resource it
+needs before returning. The generic contract does not prescribe how.
+
+Failure has two phases. Startable.StartFailure is thrown before owners exist.
+After owners exist, IO.Failure preserves whether terminal failure came from
+strategy execution or the caller-supplied operation. Resource, output, and the
+one-shot operation closure have no Sendable requirement.
