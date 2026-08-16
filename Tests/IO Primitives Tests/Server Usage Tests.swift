@@ -43,7 +43,8 @@ extension Server {
     struct Capabilities: Sendable {
         let bind: @Sendable (Server.Address) async throws(Server.Error) -> Server.Listener
         let listen: @Sendable (borrowing Server.Listener, Int) async throws(Server.Error) -> Void
-        let accept: @Sendable (borrowing Server.Listener) async throws(Server.Error) -> Server.Connection
+        let accept:
+            @Sendable (borrowing Server.Listener) async throws(Server.Error) -> Server.Connection
         let close: @Sendable (consuming Server.Listener) async -> Void
     }
 }
@@ -137,7 +138,9 @@ extension Server.Test.Integration {
         let caps = Server.Capabilities(
             bind: { _ throws(Server.Error) in Server.Listener(raw: 1) },
             listen: { _, _ throws(Server.Error) in },
-            accept: { _ throws(Server.Error) in Server.Connection(raw: 2, peer: Server.Address(host: "", port: 0)) },
+            accept: { _ throws(Server.Error) in
+                Server.Connection(raw: 2, peer: Server.Address(host: "", port: 0))
+            },
             close: { _ in }
         )
         let io = IO(capabilities: caps)

@@ -45,7 +45,9 @@ extension BasicFD {
         let read: @Sendable (borrowing BasicFD.Descriptor, Int) async throws(BasicFD.Error) -> Int
         let write: @Sendable (borrowing BasicFD.Descriptor, Int) async throws(BasicFD.Error) -> Int
         let close: @Sendable (consuming BasicFD.Descriptor) async -> Void
-        let ready: @Sendable (borrowing BasicFD.Descriptor, BasicFD.Interest) async throws(BasicFD.Error) -> Void
+        let ready:
+            @Sendable (borrowing BasicFD.Descriptor, BasicFD.Interest) async throws(BasicFD.Error)
+                -> Void
     }
 }
 
