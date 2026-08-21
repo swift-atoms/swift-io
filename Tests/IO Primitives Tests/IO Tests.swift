@@ -1,25 +1,5 @@
-// ===----------------------------------------------------------------------===//
-//
-// This source file is part of the swift-primitives open source project
-//
-// Copyright (c) 2024-2026 Coen ten Thije Boonkkamp and the swift-primitives
-// project authors
-// Licensed under Apache License v2.0
-//
-// See LICENSE for license information
-//
-// ===----------------------------------------------------------------------===//
-
 import IO_Primitives_Test_Support
 import Testing
-
-// ============================================================================
-// MARK: - Suite
-//
-// `IO` is generic, and `@Test`/`@Suite` macros cannot attach to types in a
-// generic context. A file-private standalone `Test` struct hosts the four
-// canonical category sub-suites; Swift Testing discovers them directly.
-// ============================================================================
 
 @Suite("IO")
 private struct Test {
@@ -29,25 +9,15 @@ private struct Test {
     @Suite(.serialized) struct Performance {}
 }
 
-// ============================================================================
-// MARK: - Fixtures
-// ============================================================================
-
-/// Minimal capability struct for exercising IO<C> construction.
 private struct TrivialCapabilities: Sendable {
     let tag: Int
 }
 
-/// Capability type with a phantom-tag generic parameter.
 private struct TaggedCapabilities<Tag>: Sendable {
     let marker: Int
 }
 
 private enum Client {}
-
-// ============================================================================
-// MARK: - Unit
-// ============================================================================
 
 extension Test.Unit {
 
@@ -74,10 +44,6 @@ extension Test.Unit {
         #expect(io.capabilities.tag == 7)
     }
 }
-
-// ============================================================================
-// MARK: - Edge Case
-// ============================================================================
 
 extension Test.`Edge Case` {
 

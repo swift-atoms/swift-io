@@ -1,21 +1,5 @@
-// ===----------------------------------------------------------------------===//
-//
-// Demonstration: how `IO<Capabilities>` at L1 is consumed by `swift-sockets`.
-//
-// Socket capabilities differ from basic fd ops: `connect`, `accept`, `send`,
-// `recv`, `shutdown` are the canonical socket-layer operations. Many map
-// natively to io_uring ops (`IORING_OP_ACCEPT`, `IORING_OP_CONNECT`,
-// `IORING_OP_SEND`, `IORING_OP_RECV`) — which is the architectural win
-// over a 4-op substrate that would force `io.ready + raw_accept`.
-//
-// ===----------------------------------------------------------------------===//
-
 import IO_Primitives_Test_Support
 import Testing
-
-// ============================================================================
-// MARK: - Domain types (would live in swift-sockets at L3)
-// ============================================================================
 
 private enum Socket {}
 
@@ -50,10 +34,6 @@ extension Socket {
     }
 }
 
-// ============================================================================
-// MARK: - Suite
-// ============================================================================
-
 extension Socket {
 
     @Suite("Socket Usage (swift-sockets)")
@@ -64,10 +44,6 @@ extension Socket {
         @Suite(.serialized) struct Performance {}
     }
 }
-
-// ============================================================================
-// MARK: - Fixtures
-// ============================================================================
 
 private actor Recorder {
     var calls: [String] = []
@@ -105,10 +81,6 @@ private func fake(recorder: Recorder) -> IO<Socket.Capabilities> {
     return IO(capabilities: caps)
 }
 
-// ============================================================================
-// MARK: - Integration
-// ============================================================================
-
 extension Socket.Test.Integration {
 
     @Test
@@ -143,8 +115,7 @@ extension Socket.Test.Integration {
         #expect(accepted == Socket.Descriptor(raw: 4))
 
         let calls = await recorder.snapshot()
-        // One call. No "ready" preamble — accept is a first-class capability
-        // operation, which on io_uring maps to IORING_OP_ACCEPT directly.
+
         #expect(calls == ["accept(fd: 3)"])
     }
 }

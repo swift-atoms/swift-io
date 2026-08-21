@@ -1,25 +1,5 @@
-// ===----------------------------------------------------------------------===//
-//
-// Demonstration: how `IO<Capabilities>` at L1 is consumed by `swift-io`
-// (the basic fd byte-ops domain). The capability struct below is a stand-in
-// for what the production swift-io package would define at L3.
-//
-// Shape: IO<BasicFD.Capabilities> — bundle with four fd-based operations.
-//
-// Multi-type-per-file exception: this demo file defines its own `BasicFD`
-// namespace + types + `Capabilities` struct alongside the test suite. The
-// domain types are colocated with the tests that exercise them so the
-// demonstration reads as a single self-contained example. All types are
-// nested (Nest.Name), compliant with other code-surface rules.
-//
-// ===----------------------------------------------------------------------===//
-
 import IO_Primitives_Test_Support
 import Testing
-
-// ============================================================================
-// MARK: - Domain types (would live in swift-io at L3)
-// ============================================================================
 
 private enum BasicFD {}
 
@@ -40,7 +20,7 @@ extension BasicFD {
 }
 
 extension BasicFD {
-    /// The basic fd byte-ops capability surface.
+
     struct Capabilities: Sendable {
         let read: @Sendable (borrowing BasicFD.Descriptor, Int) async throws(BasicFD.Error) -> Int
         let write: @Sendable (borrowing BasicFD.Descriptor, Int) async throws(BasicFD.Error) -> Int
@@ -50,10 +30,6 @@ extension BasicFD {
                 -> Void
     }
 }
-
-// ============================================================================
-// MARK: - Suite
-// ============================================================================
 
 extension BasicFD {
 
@@ -66,10 +42,6 @@ extension BasicFD {
     }
 }
 
-// ============================================================================
-// MARK: - Fixtures
-// ============================================================================
-
 private actor Recorder {
     var calls: [String] = []
 }
@@ -79,10 +51,6 @@ extension Recorder {
     func snapshot() -> [String] { calls }
 }
 
-/// Fake factory mirroring what a per-strategy production factory would
-/// produce (e.g., `IO.blocking()`).
-///
-/// Records each call.
 private func fake(recorder: Recorder) -> IO<BasicFD.Capabilities> {
     let caps = BasicFD.Capabilities(
         read: { fd, n throws(BasicFD.Error) in
@@ -102,10 +70,6 @@ private func fake(recorder: Recorder) -> IO<BasicFD.Capabilities> {
     )
     return IO(capabilities: caps)
 }
-
-// ============================================================================
-// MARK: - Integration
-// ============================================================================
 
 extension BasicFD.Test.Integration {
 

@@ -1,20 +1,5 @@
-// ===----------------------------------------------------------------------===//
-//
-// Demonstration: how `IO<Capabilities>` at L1 is consumed by `swift-server`.
-//
-// A server's capability set is small but highly distinct: bind / listen /
-// accept / close. These are the listener-side operations, distinct from
-// client-side socket ops (connect / send / recv) and from byte-stream
-// ops (read / write).
-//
-// ===----------------------------------------------------------------------===//
-
 import IO_Primitives_Test_Support
 import Testing
-
-// ============================================================================
-// MARK: - Domain types (would live in swift-server at L3)
-// ============================================================================
 
 private enum Server {}
 
@@ -49,10 +34,6 @@ extension Server {
     }
 }
 
-// ============================================================================
-// MARK: - Suite
-// ============================================================================
-
 extension Server {
 
     @Suite("Server Usage (swift-server)")
@@ -63,10 +44,6 @@ extension Server {
         @Suite(.serialized) struct Performance {}
     }
 }
-
-// ============================================================================
-// MARK: - Fixtures
-// ============================================================================
 
 private actor Recorder {
     var calls: [String] = []
@@ -100,10 +77,6 @@ private func fake(
     return IO(capabilities: caps)
 }
 
-// ============================================================================
-// MARK: - Integration
-// ============================================================================
-
 extension Server.Test.Integration {
 
     @Test
@@ -131,10 +104,7 @@ extension Server.Test.Integration {
 
     @Test
     func `TCA26 shared-executor pattern compiles`() {
-        // A real server actor would expose:
-        //     nonisolated var unownedExecutor: UnownedSerialExecutor { io.runner.executor() }
-        // Here we only verify the io.runner access compiles. Actually invoking
-        // .unimplemented's executor() traps — that's its contract.
+
         let caps = Server.Capabilities(
             bind: { _ throws(Server.Error) in Server.Listener(raw: 1) },
             listen: { _, _ throws(Server.Error) in },

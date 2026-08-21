@@ -1,23 +1,5 @@
-// ===----------------------------------------------------------------------===//
-//
-// Demonstration: how `IO<Capabilities>` at L1 is consumed by
-// `swift-file-system`.
-//
-// File-system capabilities split across fd-based ops (read / write / close
-// on already-open descriptors) and path-based ops (open / stat / unlink /
-// rename — there is no descriptor until after `open` returns). A domain
-// witness covers both cleanly. Under the 4-op substrate model, path-based
-// ops would have to escape the substrate entirely; here they are
-// first-class capability operations.
-//
-// ===----------------------------------------------------------------------===//
-
 import IO_Primitives_Test_Support
 import Testing
-
-// ============================================================================
-// MARK: - Domain types (would live in swift-file-system at L3)
-// ============================================================================
 
 private enum File {}
 
@@ -61,10 +43,6 @@ extension File {
     }
 }
 
-// ============================================================================
-// MARK: - Suite
-// ============================================================================
-
 extension File {
 
     @Suite("File System Usage (swift-file-system)")
@@ -75,10 +53,6 @@ extension File {
         @Suite(.serialized) struct Performance {}
     }
 }
-
-// ============================================================================
-// MARK: - Fixtures
-// ============================================================================
 
 private actor Recorder {
     var calls: [String] = []
@@ -119,10 +93,6 @@ private func fake(recorder: Recorder) -> IO<File.Capabilities> {
     )
     return IO(capabilities: caps)
 }
-
-// ============================================================================
-// MARK: - Integration
-// ============================================================================
 
 extension File.Test.Integration {
 
