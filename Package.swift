@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "swift-io-primitives",
+    name: "swift-io",
     platforms: [
         .macOS(.v27),
         .iOS(.v27),
@@ -13,34 +13,34 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "IO Primitives",
-            targets: ["IO Primitives"]
+            name: "IO",
+            targets: ["IO"]
         ),
         .library(
-            name: "IO Primitives Test Support",
-            targets: ["IO Primitives Test Support"]
+            name: "IO Test Support",
+            targets: ["IO Test Support"]
         ),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "IO Primitives",
+            name: "IO",
             dependencies: []
         ),
         .target(
-            name: "IO Primitives Test Support",
+            name: "IO Test Support",
             dependencies: [
-                "IO Primitives"
+                "IO"
             ],
             path: "Tests/Support"
         ),
         .testTarget(
-            name: "IO Primitives Tests",
+            name: "IO Tests",
             dependencies: [
-                "IO Primitives",
-                "IO Primitives Test Support",
+                "IO",
+                "IO Test Support",
             ],
-            path: "Tests/IO Primitives Tests"
+            path: "Tests/IO Tests"
         ),
     ],
     swiftLanguageModes: [.v6]

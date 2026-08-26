@@ -1,4 +1,4 @@
-public import IO_Primitives
+public import IO
 
 extension IO.Runner {
 
