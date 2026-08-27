@@ -1,100 +1,70 @@
-# IO
+# swift-io
 
-![Development Status](https://img.shields.io/badge/status-active--development-blue.svg)
+A platform-independent witness shape for typed I/O capabilities.
 
-The canonical Layer 1 witness shape for I/O in Swift — `IO<Capabilities>` pairs a domain's operation set with the scheduling evidence that runs it, with zero platform dependencies.
-
----
-
-## Quick Start
-
-`IO<Capabilities>` is one generic shell shared by every I/O domain. A domain (files, sockets, servers, timers, basic fd byte-ops) supplies its own `Capabilities` struct of `@Sendable` operation closures; `IO` bundles that struct with an `IO.Runner` — the executor the operations run on plus an idempotent shutdown hook. The two concerns stay structurally separate: capabilities describe *what* operations exist, the runner describes *where* they run, so one runner can back many domains.
-
-```swift
-import IO_Test_Support  // re-exports IO + the `.unimplemented` runner
-
-// A domain defines its own capability surface (this is what `swift-io` does at L3).
-enum BasicFD {
-    struct Descriptor: Sendable { let raw: Int32 }
-    enum Failure: Error, Sendable { case wouldBlock }
-
-    struct Capabilities: Sendable {
-        let read:  @Sendable (borrowing Descriptor, Int) async throws(Failure) -> Int
-        let write: @Sendable (borrowing Descriptor, Int) async throws(Failure) -> Int
-        let close: @Sendable (consuming Descriptor) async -> Void
-    }
-}
-
-// One generic shell bundles the domain's closures. A production factory would
-// supply a real runner; here the test-support `.unimplemented` runner stands in.
-let io = IO(
-    capabilities: BasicFD.Capabilities(
-        read:  { fd, count throws(BasicFD.Failure) in count },
-        write: { fd, count throws(BasicFD.Failure) in count },
-        close: { fd in }
-    )
-)
-
-// Consumers work against a typed bundle; typed throws survive the surface.
-let bytesRead = try await io.capabilities.read(BasicFD.Descriptor(raw: 3), 64)
-```
-
-In production an `IO.Runner` carries two closures supplied by the scheduling strategy: `executor` returns the `UnownedSerialExecutor` the bundle is pinned to (so consumer actors can forward `unownedExecutor` and avoid an executor hop), and `shutdown` releases the underlying OS resources. The package ships the witness types only — no actors, no strategy factories, no kernel imports. Those live at Layer 3.
-
----
+`IO<Capabilities>` bundles a domain's `Sendable` operation set with the scheduling evidence used to run it. The package defines only the shared shape: platform packages own concrete file, socket, server, and other I/O capabilities.
 
 ## Installation
 
+Add the package from its canonical home:
+
 ```swift
 dependencies: [
-    .package(url: "https://github.com/swift-molecules/swift-io.git", branch: "main")
+    .package(
+        url: "https://github.com/swift-atoms/swift-io.git",
+        branch: "main"
+    )
 ]
 ```
 
+Then depend on the narrowest product your target needs:
+
 ```swift
-.target(
-    name: "App",
-    dependencies: [
-        .product(name: "IO", package: "swift-io"),
-    ]
-)
+.product(name: "IO", package: "swift-io")
 ```
 
-Requires Swift 6.3.1 and macOS 26 / iOS 26 / tvOS 26 / watchOS 26 / visionOS 26 (or the matching Linux / Windows toolchain).
+## Core
 
----
+A domain defines its own capability surface and passes the resulting bundle through `IO`:
 
-## Architecture
+```swift
+import IO
 
-Two library products, zero external dependencies.
+enum FileDomain {
+    struct Descriptor: Sendable {
+        let rawValue: Int32
+    }
 
-| Product | Target | Purpose |
-|---------|--------|---------|
-| `IO` | `Sources/IO/` | The `IO<Capabilities>` bundle (capabilities + runner) and nested `IO.Runner` (executor closure + shutdown hook). |
-| `IO Test Support` | `Tests/Support/` | Re-exports the main target plus `IO.Runner.unimplemented` (a trapping runner) and an `IO(capabilities:)` convenience initializer for tests that exercise only the capability surface. |
+    enum Failure: Error, Sendable {
+        case unavailable
+    }
 
-Foundation-free.
+    struct Capabilities: Sendable {
+        let read: @Sendable (
+            borrowing Descriptor,
+            Int
+        ) async throws(Failure) -> Int
+    }
+}
 
----
+func read(
+    from descriptor: borrowing FileDomain.Descriptor,
+    using io: borrowing IO<FileDomain.Capabilities>
+) async throws(FileDomain.Failure) -> Int {
+    try await io.capabilities.read(descriptor, 4096)
+}
+```
 
-## Platform Support
+Outside Embedded Swift, `IO.Runner` carries an `UnownedSerialExecutor` provider and an asynchronous shutdown hook, and `IO` is initialized with both capabilities and a runner. Under Embedded, the unavailable executor surface is omitted and `IO(capabilities:)` preserves the capability bundle directly.
 
-| Platform | Status |
-|----------|--------|
-| macOS 26 | Full support |
-| Linux | Full support |
-| Windows | Full support |
-| iOS / tvOS / watchOS / visionOS | Supported |
-| Swift Embedded | Supported |
+## Products
 
----
+- `IO` — the generic capability bundle and, outside Embedded, its runner witness.
+- `IO Standard Library Integration` — the standard-library integration and compatibility re-export seam.
+- `IO Apple Foundation Integration` — the Apple Foundation integration seam; this is the only product that imports Foundation.
 
-## Community
-
-<!-- BEGIN: discussion -->
-<!-- Discussion thread created at publication. -->
-<!-- END: discussion -->
+The package has no external dependencies. Its core and standard-library integration are Foundation-free.
 
 ## License
 
-Apache 2.0. See [LICENSE.md](LICENSE.md).
+See [LICENSE.md](LICENSE.md).

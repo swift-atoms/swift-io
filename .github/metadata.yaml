@@ -1,8 +1,7 @@
 # .github/metadata.yaml
-# Triaged by AI-assisted bulk pass (2026-04-29).
-description: "Layer 1 (primitives) package hosting bare witness types for the swift-io constellation — IO capability, IO."
+description: "A platform-independent capability bundle with optional executor and shutdown witnesses."
 topics:
-  - primitives
+  - atoms
   - io
 homepage: "https://swift-institute.org"
 readme:
