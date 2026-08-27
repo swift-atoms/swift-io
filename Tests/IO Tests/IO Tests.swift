@@ -1,4 +1,4 @@
-import IO_Test_Support
+import IO
 import Testing
 
 @Suite("IO")
