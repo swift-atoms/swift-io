@@ -1,4 +1,4 @@
-import IO
+import IO_Test_Support
 import Testing
 
 @Suite("IO.Runner")

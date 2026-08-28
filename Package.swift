@@ -17,12 +17,8 @@ let package = Package(
             targets: ["IO"]
         ),
         .library(
-            name: "IO Standard Library Integration",
-            targets: ["IO Standard Library Integration"]
-        ),
-        .library(
-            name: "IO Apple Foundation Integration",
-            targets: ["IO Apple Foundation Integration"]
+            name: "IO Test Support",
+            targets: ["IO Test Support"]
         ),
     ],
     dependencies: [],
@@ -32,19 +28,18 @@ let package = Package(
             dependencies: []
         ),
         .target(
-            name: "IO Standard Library Integration",
-            dependencies: ["IO"]
-        ),
-        .target(
-            name: "IO Apple Foundation Integration",
+            name: "IO Test Support",
             dependencies: [
-                "IO",
-                "IO Standard Library Integration",
-            ]
+                "IO"
+            ],
+            path: "Tests/Support"
         ),
         .testTarget(
             name: "IO Tests",
-            dependencies: ["IO"],
+            dependencies: [
+                "IO",
+                "IO Test Support",
+            ],
             path: "Tests/IO Tests"
         ),
     ],
