@@ -1,4 +1,4 @@
-# IO Primitives
+# IO
 
 ![Development Status](https://img.shields.io/badge/status-active--development-blue.svg)
 
@@ -11,7 +11,7 @@ The canonical Layer 1 witness shape for I/O in Swift — `IO<Capabilities>` pair
 `IO<Capabilities>` is one generic shell shared by every I/O domain. A domain (files, sockets, servers, timers, basic fd byte-ops) supplies its own `Capabilities` struct of `@Sendable` operation closures; `IO` bundles that struct with an `IO.Runner` — the executor the operations run on plus an idempotent shutdown hook. The two concerns stay structurally separate: capabilities describe *what* operations exist, the runner describes *where* they run, so one runner can back many domains.
 
 ```swift
-import IO_Primitives_Test_Support  // re-exports IO_Primitives + the `.unimplemented` runner
+import IO_Test_Support  // re-exports IO + the `.unimplemented` runner
 
 // A domain defines its own capability surface (this is what `swift-io` does at L3).
 enum BasicFD {
@@ -47,7 +47,7 @@ In production an `IO.Runner` carries two closures supplied by the scheduling str
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/swift-primitives/swift-io-primitives.git", branch: "main")
+    .package(url: "https://github.com/swift-atoms/swift-io.git", branch: "main")
 ]
 ```
 
@@ -55,7 +55,7 @@ dependencies: [
 .target(
     name: "App",
     dependencies: [
-        .product(name: "IO Primitives", package: "swift-io-primitives"),
+        .product(name: "IO", package: "swift-io"),
     ]
 )
 ```
@@ -70,8 +70,8 @@ Two library products, zero external dependencies.
 
 | Product | Target | Purpose |
 |---------|--------|---------|
-| `IO Primitives` | `Sources/IO Primitives/` | The `IO<Capabilities>` bundle (capabilities + runner) and nested `IO.Runner` (executor closure + shutdown hook). |
-| `IO Primitives Test Support` | `Tests/Support/` | Re-exports the main target plus `IO.Runner.unimplemented` (a trapping runner) and an `IO(capabilities:)` convenience initializer for tests that exercise only the capability surface. |
+| `IO` | `Sources/IO/` | The `IO<Capabilities>` bundle (capabilities + runner) and nested `IO.Runner` (executor closure + shutdown hook). |
+| `IO Test Support` | `Tests/IO Test Support/` | Re-exports the main target plus `IO.Runner.unimplemented` (a trapping runner) and an `IO(capabilities:)` convenience initializer for tests that exercise only the capability surface. |
 
 Foundation-free.
 

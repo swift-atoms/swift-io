@@ -1,4 +1,4 @@
-import IO_Primitives_Test_Support
+import IO_Test_Support
 import Testing
 
 private enum Socket {}
