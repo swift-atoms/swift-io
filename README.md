@@ -47,7 +47,7 @@ In production an `IO.Runner` carries two closures supplied by the scheduling str
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/swift-molecules/swift-io.git", branch: "main")
+    .package(url: "https://github.com/swift-atoms/swift-io.git", branch: "main")
 ]
 ```
 
@@ -71,7 +71,7 @@ Two library products, zero external dependencies.
 | Product | Target | Purpose |
 |---------|--------|---------|
 | `IO` | `Sources/IO/` | The `IO<Capabilities>` bundle (capabilities + runner) and nested `IO.Runner` (executor closure + shutdown hook). |
-| `IO Test Support` | `Tests/Support/` | Re-exports the main target plus `IO.Runner.unimplemented` (a trapping runner) and an `IO(capabilities:)` convenience initializer for tests that exercise only the capability surface. |
+| `IO Test Support` | `Tests/IO Test Support/` | Re-exports the main target plus `IO.Runner.unimplemented` (a trapping runner) and an `IO(capabilities:)` convenience initializer for tests that exercise only the capability surface. |
 
 Foundation-free.
 

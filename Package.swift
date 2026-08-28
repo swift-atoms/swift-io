@@ -30,15 +30,15 @@ let package = Package(
         .target(
             name: "IO Test Support",
             dependencies: [
-                "IO"
+                .target(name: "IO")
             ],
-            path: "Tests/Support"
+            path: "Tests/IO Test Support"
         ),
         .testTarget(
             name: "IO Tests",
             dependencies: [
-                "IO",
-                "IO Test Support",
+                .target(name: "IO"),
+                .target(name: "IO Test Support"),
             ],
             path: "Tests/IO Tests"
         ),
