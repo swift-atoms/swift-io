@@ -12,33 +12,48 @@ let package = Package(
         .visionOS(.v27),
     ],
     products: [
-        .library(
-            name: "IO",
-            targets: ["IO"]
-        ),
-        .library(
-            name: "IO Test Support",
-            targets: ["IO Test Support"]
-        ),
+        .library(name: "IO", targets: ["IO"]),
+        .library(name: "IO Standard Library Integration", targets: ["IO Standard Library Integration"]),
+        .library(name: "IO Foundation Library Integration", targets: ["IO Foundation Library Integration"]),
+        .library(name: "IO Test Support", targets: ["IO Test Support"]),
     ],
     dependencies: [],
     targets: [
         .target(
             name: "IO",
-            dependencies: []
+            dependencies: [
+            ],
+            path: "Sources/IO"
+        ),
+        .target(
+            name: "IO Standard Library Integration",
+            dependencies: [
+                .target(name: "IO"),
+            ],
+            path: "Sources/IO Standard Library Integration"
+        ),
+        .target(
+            name: "IO Foundation Library Integration",
+            dependencies: [
+                .target(name: "IO"),
+                .target(name: "IO Standard Library Integration"),
+            ],
+            path: "Sources/IO Foundation Library Integration"
         ),
         .target(
             name: "IO Test Support",
             dependencies: [
-                .target(name: "IO")
+                .target(name: "IO"),
             ],
-            path: "Tests/IO Test Support"
+            path: "Tests/Support"
         ),
         .testTarget(
             name: "IO Tests",
             dependencies: [
                 .target(name: "IO"),
                 .target(name: "IO Test Support"),
+                .target(name: "IO Standard Library Integration"),
+                .target(name: "IO Foundation Library Integration"),
             ],
             path: "Tests/IO Tests"
         ),
@@ -46,8 +61,8 @@ let package = Package(
     swiftLanguageModes: [.v6]
 )
 
-for target in package.targets where ![.system, .binary, .plugin, .macro].contains(target.type) {
-    let ecosystem: [SwiftSetting] = [
+for target in package.targets {
+    target.swiftSettings = [
         .strictMemorySafety(),
         .enableUpcomingFeature("ExistentialAny"),
         .enableUpcomingFeature("InternalImportsByDefault"),
@@ -56,8 +71,4 @@ for target in package.targets where ![.system, .binary, .plugin, .macro].contain
         .enableExperimentalFeature("Lifetimes"),
         .enableUpcomingFeature("InferIsolatedConformances"),
     ]
-
-    let package: [SwiftSetting] = []
-
-    target.swiftSettings = (target.swiftSettings ?? []) + ecosystem + package
 }
