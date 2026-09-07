@@ -1,6 +1,5 @@
 #if !hasFeature(Embedded)
-
-    extension IO {
+extension IO {
 
         @safe
         public struct Runner: Sendable {
@@ -18,5 +17,4 @@
             }
         }
     }
-
 #endif

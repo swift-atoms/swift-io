@@ -13,8 +13,8 @@ let package = Package(
     ],
     products: [
         .library(name: "IO", targets: ["IO"]),
-        .library(name: "IO Standard Library Integration", targets: ["IO Standard Library Integration"]),
-        .library(name: "IO Foundation Library Integration", targets: ["IO Foundation Library Integration"]),
+
+        .library(name: "IO Foundation Integration", targets: ["IO Foundation Integration"]),
         .library(name: "IO Test Support", targets: ["IO Test Support"]),
     ],
     dependencies: [],
@@ -25,20 +25,13 @@ let package = Package(
             ],
             path: "Sources/IO"
         ),
+        
         .target(
-            name: "IO Standard Library Integration",
+            name: "IO Foundation Integration",
             dependencies: [
                 .target(name: "IO"),
             ],
-            path: "Sources/IO Standard Library Integration"
-        ),
-        .target(
-            name: "IO Foundation Library Integration",
-            dependencies: [
-                .target(name: "IO"),
-                .target(name: "IO Standard Library Integration"),
-            ],
-            path: "Sources/IO Foundation Library Integration"
+            path: "Sources/IO Foundation Integration"
         ),
         .target(
             name: "IO Test Support",
@@ -52,8 +45,7 @@ let package = Package(
             dependencies: [
                 .target(name: "IO"),
                 .target(name: "IO Test Support"),
-                .target(name: "IO Standard Library Integration"),
-                .target(name: "IO Foundation Library Integration"),
+                .target(name: "IO Foundation Integration"),
             ],
             path: "Tests/IO Tests"
         ),
