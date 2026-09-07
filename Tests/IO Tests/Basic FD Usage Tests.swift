@@ -34,11 +34,11 @@ extension BasicFD {
 extension BasicFD {
 
     @Suite("Basic FD Usage (swift-io)")
-    struct Test {
-        @Suite struct Unit {}
+    struct `Test` {
+        @Suite struct `Unit` {}
         @Suite struct `Edge Case` {}
-        @Suite struct Integration {}
-        @Suite(.serialized) struct Performance {}
+        @Suite struct `Integration` {}
+        @Suite(.serialized) struct `Performance` {}
     }
 }
 

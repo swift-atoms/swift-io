@@ -37,11 +37,11 @@ extension Server {
 extension Server {
 
     @Suite("Server Usage (swift-server)")
-    struct Test {
-        @Suite struct Unit {}
+    struct `Test` {
+        @Suite struct `Unit` {}
         @Suite struct `Edge Case` {}
-        @Suite struct Integration {}
-        @Suite(.serialized) struct Performance {}
+        @Suite struct `Integration` {}
+        @Suite(.serialized) struct `Performance` {}
     }
 }
 

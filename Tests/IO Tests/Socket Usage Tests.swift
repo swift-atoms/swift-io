@@ -37,11 +37,11 @@ extension Socket {
 extension Socket {
 
     @Suite("Socket Usage (swift-sockets)")
-    struct Test {
-        @Suite struct Unit {}
+    struct `Test` {
+        @Suite struct `Unit` {}
         @Suite struct `Edge Case` {}
-        @Suite struct Integration {}
-        @Suite(.serialized) struct Performance {}
+        @Suite struct `Integration` {}
+        @Suite(.serialized) struct `Performance` {}
     }
 }
 

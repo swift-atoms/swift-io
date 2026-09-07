@@ -46,11 +46,11 @@ extension File {
 extension File {
 
     @Suite("File System Usage (swift-file-system)")
-    struct Test {
-        @Suite struct Unit {}
+    struct `Test` {
+        @Suite struct `Unit` {}
         @Suite struct `Edge Case` {}
-        @Suite struct Integration {}
-        @Suite(.serialized) struct Performance {}
+        @Suite struct `Integration` {}
+        @Suite(.serialized) struct `Performance` {}
     }
 }
 

@@ -2,11 +2,11 @@ import IO_Test_Support
 import Testing
 
 @Suite("IO")
-private struct Test {
-    @Suite struct Unit {}
+private struct `Test` {
+    @Suite struct `Unit` {}
     @Suite struct `Edge Case` {}
-    @Suite struct Integration {}
-    @Suite(.serialized) struct Performance {}
+    @Suite struct `Integration` {}
+    @Suite(.serialized) struct `Performance` {}
 }
 
 private struct TrivialCapabilities: Sendable {
