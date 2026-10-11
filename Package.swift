@@ -45,7 +45,6 @@ let package = Package(
             dependencies: [
                 .target(name: "IO"),
                 .target(name: "IO Test Support"),
-                .target(name: "IO Foundation Integration"),
             ],
             path: "Tests/IO Tests"
         ),
@@ -53,7 +52,7 @@ let package = Package(
     swiftLanguageModes: [.v6]
 )
 
-for target in package.targets where ![.system, .binary, .plugin].contains(target.type) {
+for target in package.targets where ![.system, .binary, .plugin, .macro].contains(target.type) {
     target.swiftSettings = (target.swiftSettings ?? []) + [
         .strictMemorySafety(),
         .enableUpcomingFeature("ExistentialAny"),

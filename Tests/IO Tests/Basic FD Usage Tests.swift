@@ -13,7 +13,7 @@ extension BasicFD {
         case write
     }
 
-    enum Error: Swift.Error, Sendable, Equatable {
+    enum Error: Swift::Error, Sendable, Equatable {
         case wouldBlock
         case brokenPipe
     }

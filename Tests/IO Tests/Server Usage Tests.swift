@@ -18,7 +18,7 @@ extension Server {
         let peer: Server.Address
     }
 
-    enum Error: Swift.Error, Sendable, Equatable {
+    enum Error: Swift::Error, Sendable, Equatable {
         case portInUse
         case notBound
     }

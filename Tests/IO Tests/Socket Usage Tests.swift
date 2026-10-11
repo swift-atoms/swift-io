@@ -13,7 +13,7 @@ extension Socket {
         let port: UInt16
     }
 
-    enum Error: Swift.Error, Sendable, Equatable {
+    enum Error: Swift::Error, Sendable, Equatable {
         case refused
         case reset
         case timeout

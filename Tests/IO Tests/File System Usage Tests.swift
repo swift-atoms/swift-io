@@ -20,7 +20,7 @@ extension File {
         let size: UInt64
     }
 
-    enum Error: Swift.Error, Sendable, Equatable {
+    enum Error: Swift::Error, Sendable, Equatable {
         case notFound
         case permissionDenied
     }
