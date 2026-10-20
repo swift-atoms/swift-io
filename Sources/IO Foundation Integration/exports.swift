@@ -1,2 +1,2 @@
-@_exported public import IO
 import Foundation
+@_exported public import IO
