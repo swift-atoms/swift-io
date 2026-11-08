@@ -1,7 +1,7 @@
 import IO_Test_Support
 import Testing
 
-@Suite("IO")
+@Suite
 private struct `Test` {
     @Suite struct `Unit` {}
     @Suite struct `Edge Case` {}
