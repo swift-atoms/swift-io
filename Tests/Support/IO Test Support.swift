@@ -1,18 +1,20 @@
-public import IO
+#if !hasFeature(Embedded)
+    public import IO
 
-extension IO.Runner {
+    extension IO.Runner {
 
-    public static var unimplemented: IO.Runner {
-        unsafe IO.Runner(
-            executor: { fatalError("IO.Runner.unimplemented.executor() was called") },
-            shutdown: { fatalError("IO.Runner.unimplemented.shutdown() was called") }
-        )
+        public static var unimplemented: IO.Runner {
+            unsafe IO.Runner(
+                executor: { fatalError("IO.Runner.unimplemented.executor() was called") },
+                shutdown: { fatalError("IO.Runner.unimplemented.shutdown() was called") }
+            )
+        }
     }
-}
 
-extension IO {
+    extension IO {
 
-    public init(capabilities: Capabilities) {
-        self.init(capabilities: capabilities, runner: .unimplemented)
+        public init(capabilities: Capabilities) {
+            self.init(capabilities: capabilities, runner: .unimplemented)
+        }
     }
-}
+#endif
